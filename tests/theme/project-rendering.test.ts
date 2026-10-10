@@ -51,7 +51,7 @@ test('document rendering keeps project identity and optional integrations isolat
     assert.match(a, /href="\/writing\/example.html\?view=all#section"/)
     assert.doesNotMatch(a, /feed.xml.html/)
     assert.match(b, /Example \| Second/)
-    assert.match(b, /Powered by TiO₂/)
+    assert.match(b, /Powered by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006\/TiO2">TiO₂<\/a>/u)
     assert.match(b, /name="generator" content="TiO₂"/)
     assert.doesNotMatch(b, /First|first.test|CC BY|MIT Licensed|feed.xml|favicon|cinzel|og:image|twitter:image/)
     assert.doesNotMatch(b, /Powered by.*Eleventy/)
@@ -221,8 +221,14 @@ test('a foreign consumer builds configured pages, layout, client entry and frame
         for (const html of [article, archive, about, custom, home, foundation, ...otherIndexes]) {
             assert.match(html, /Independent Consumer/)
             assert.match(html, /consumer-layout/)
-            assert.match(html, /Powered by TiO₂ by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u)
-            assert.doesNotMatch(html.replace(/ by <a[^>]*>Codeboy<\/a>/u, ''), /CodeBoy|Codeboy|cb-about|cinzel|giscus/)
+            assert.match(
+                html,
+                /Powered by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006\/TiO2">TiO₂<\/a> by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u
+            )
+            assert.doesNotMatch(
+                html.replace(/Powered by <a[^>]*>TiO₂<\/a> by <a[^>]*>Codeboy<\/a>/u, ''),
+                /CodeBoy|Codeboy|cb-about|cinzel|giscus/
+            )
             assert.doesNotMatch(html, /href="\/pages\//)
             assert.doesNotMatch(html, /\p{Script=Han}/u, 'English projects must not emit Chinese framework text')
         }

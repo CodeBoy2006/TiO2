@@ -46,8 +46,14 @@ test(
                 await run('pnpm', ['exec', 'tio2', 'build'], consumer)
                 const output = path.join(consumer, '.tio2-tmp/site')
                 const home = await fs.readFile(path.join(output, 'index.html'), 'utf8')
-                assert.match(home, /Powered by TiO₂ by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u)
-                assert.doesNotMatch(home.replace(/ by <a[^>]*>Codeboy<\/a>/u, ''), /Codeboy|cb-about/u)
+                assert.match(
+                    home,
+                    /Powered by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006\/TiO2">TiO₂<\/a> by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u
+                )
+                assert.doesNotMatch(
+                    home.replace(/Powered by <a[^>]*>TiO₂<\/a> by <a[^>]*>Codeboy<\/a>/u, ''),
+                    /Codeboy|cb-about/u
+                )
                 const script = home.match(/<script type="module" src="([^"]+)"/u)?.[1]
                 assert.ok(script)
                 assert.match(

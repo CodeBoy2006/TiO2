@@ -126,7 +126,7 @@ function renderDefaultDocument(project: TiO2Project, options: DocumentOptions) {
     const footer =
         options.copyright === false
             ? ''
-            : `<div class="site-footer">${site.contentLicense ? `${escapeHtmlText(site.contentLicense)} | ` : ''}Copyright © ${copyrightRange} <a class="vitepress" href="${escapeHtmlAttribute(site.url)}">${escapeHtmlText(site.title)}</a><br>Powered by ${FRAMEWORK_META.name} by <a class="vitepress" href="https://github.com/CodeBoy2006">Codeboy</a></div>`
+            : `<div class="site-footer">${site.contentLicense ? `${escapeHtmlText(site.contentLicense)} | ` : ''}Copyright © ${copyrightRange} <a class="vitepress" href="${escapeHtmlAttribute(site.url)}">${escapeHtmlText(site.title)}</a><br>Powered by <a class="vitepress" href="https://github.com/CodeBoy2006/TiO2">${FRAMEWORK_META.name}</a> by <a class="vitepress" href="https://github.com/CodeBoy2006">Codeboy</a></div>`
     const clientHead = [
         ...options.clientAssets.stylesheets.map(
             (href) => `<link rel="stylesheet" href="${escapeHtmlAttribute(href)}">`

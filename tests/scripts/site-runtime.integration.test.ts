@@ -75,8 +75,14 @@ test(
             const html = await fs.readFile(path.join(output, 'writing/hello.html'), 'utf8')
             assert.match(html, /Initial Notebook/)
             assert.match(html, /first-layout/)
-            assert.match(html, /Powered by TiO₂ by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u)
-            assert.doesNotMatch(html.replace(/ by <a[^>]*>Codeboy<\/a>/u, ''), /Codeboy|cb-about/)
+            assert.match(
+                html,
+                /Powered by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006\/TiO2">TiO₂<\/a> by <a class="vitepress" href="https:\/\/github.com\/CodeBoy2006">Codeboy<\/a>/u
+            )
+            assert.doesNotMatch(
+                html.replace(/Powered by <a[^>]*>TiO₂<\/a> by <a[^>]*>Codeboy<\/a>/u, ''),
+                /Codeboy|cb-about/
+            )
             const mathStylesheet = html.match(/href="(\/assets\/math-[a-f0-9]{16}\.css)"/u)?.[1]
             assert.ok(mathStylesheet, 'Math styles must be linked from consumer pages')
             const mathStyles = await fs.readFile(path.join(output, mathStylesheet), 'utf8')
