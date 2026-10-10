@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "lib": ["ESNext", "DOM"],
+        "types": []
+    },
+    "include": [
+        ".vitepress/**/*.ts",
+        ".vitepress/**/*.d.ts",
+        ".vitepress/**/*.vue",
+        "packages/**/*.ts",
+        "site/**/*.ts",
+        "site/**/*.mts",
+        "scripts/build-search-index.ts",
+        "scripts/verify-site-client.ts",
+        "apps/**/*.ts",
+        "apps/**/*.vue",
+        "shims-vue.d.ts",
+        "scripts/run-cms-web.mts"
+    ],
+    "exclude": ["dist", "node_modules"]
+}

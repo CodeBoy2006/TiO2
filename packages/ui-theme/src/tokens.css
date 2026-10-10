@@ -1,0 +1,22 @@
+:root {
+    --vp-c-brand: #2563eb;
+    --vp-c-brand-button: #2563eb;
+    --vp-c-brand-light: var(--vp-c-brand);
+    --vp-c-brand-lighter: var(--vp-c-brand);
+    --vp-c-brand-dark: var(--vp-c-brand);
+    --vp-c-brand-darker: var(--vp-c-brand);
+
+    --vp-font-family-base:
+        'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+    --date-font-family: Georgia, 'Times New Roman', serif;
+    --article-title-font-family:
+        'Noto Serif SC Variable', 'Noto Serif SC', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Source Han Serif CN',
+        'Songti SC', 'STSong', 'SimSun', 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+    --bt-theme-title: #000;
+}
+
+.dark {
+    --vp-c-brand: #60a5fa;
+    --bt-theme-title: #fff;
+}

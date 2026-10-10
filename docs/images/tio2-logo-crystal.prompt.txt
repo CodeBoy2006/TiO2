@@ -1,0 +1,17 @@
+Tool: built-in ImageGen (image_gen.imagegen)
+Asset: TiO2 crystal logo concept
+Scientific reference: https://rruff.info/doclib/hom/anatase.pdf
+Design scope: abstracted anatase crystal habit; not an atomic structure diagram.
+Output: 1254 x 1254 PNG, white background.
+
+Final generation prompt:
+
+Use case: logo-brand
+Asset type: primary standalone minimalist emblem for TiO₂, a quiet static publishing framework for long-form writing and structured knowledge.
+Primary request: Create ONE beautifully resolved original logo derived from an actual titanium dioxide crystal, with radical restraint and a strong, memorable silhouette. This is a serious editorial and software identity, not a jewelry brand.
+Scientific inspiration: Anatase, a TiO₂ polymorph, has a tetragonal crystal habit, typically an acute square bipyramid. Use this macro crystal habit as the geometric starting point: two pyramids joined at a square equator, elongated along the upright axis. The form may have tiny truncations at its two tips. Abstract the crystal as a logo, not a scientific diagram.
+Design: One compact upright faceted crystal in a subtle three-quarter projection, visually taller than wide but sufficiently broad to work in an avatar. Reduce its structure to only TWO OR THREE clean substantial polygonal ink faces and ONE generous unprinted white facet. The white facet is central to the identity: titanium white as the quiet ground supporting thought. Let black mass and blank space define the crystal without drawing every edge. A single broad, purposeful negative-space cut may articulate the facets. Use strict planar geometry, deliberate optical balance, a slightly asymmetric projection, strong positive masses, and very few edges. The whole mark should feel unified and calm. Do not force a T, letters or a monogram into it. Do not separate the top and bottom into floating symbols.
+Style/medium: Flat vector-like graphic identity. Entire mark uses one uniform solid near-black ink #171717 on pure white #FFFFFF. All black faces are the same color; white is negative space rather than shading. No grey facets, texture, tone variation, lighting or dimensional rendering. Crisp antialiased polygon boundaries; no hairlines or fine wireframe.
+Composition/framing: Exactly ONE isolated centered logo on a square white canvas, around 65 percent of the canvas height, generous balanced margins. Present the final emblem alone, no mockups, no grid, no alternatives, no captions.
+Constraints: Recognizable silhouette at small size; broad negative space; few large geometric surfaces; dignified and timeless, with the quiet precision of a publisher's colophon. Original crystal identity. Avoid resemblance to Ethereum's split diamond symbol or Obsidian's irregular rock silhouette.
+Avoid: ball-and-stick atoms, molecule diagrams, crystal lattice wires, decorative sparkles, quartz clusters, six-sided quartz prisms, gemstones with dozens of facets, diamond jewelry iconography, enclosing circles or app tiles, ordinary cubes, hexagon badges, generic blockchain marks, gradients, shadows, 3D, metallic effects, translucency, gloss, photos, ornamental strokes, text, watermark.

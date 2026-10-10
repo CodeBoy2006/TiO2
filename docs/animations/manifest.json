@@ -1,0 +1,227 @@
+{
+  "sourceCommit": "07778a4",
+  "video": {
+    "codec": "VP9",
+    "fps": 25
+  },
+  "images": {
+    "webpFps": 15,
+    "gifFps": 12
+  },
+  "clips": [
+    {
+      "name": "reading-navigation",
+      "width": 380,
+      "height": 540,
+      "durationSeconds": 10.2,
+      "variants": [
+        {
+          "file": "reading-navigation.webm",
+          "bytes": 108262
+        },
+        {
+          "file": "reading-navigation.webp",
+          "bytes": 217794
+        },
+        {
+          "file": "reading-navigation.gif",
+          "bytes": 656901
+        }
+      ]
+    },
+    {
+      "name": "aigc-disclosure",
+      "width": 640,
+      "height": 180,
+      "durationSeconds": 7.76,
+      "variants": [
+        {
+          "file": "aigc-disclosure.webm",
+          "bytes": 46848
+        },
+        {
+          "file": "aigc-disclosure.webp",
+          "bytes": 86852
+        },
+        {
+          "file": "aigc-disclosure.gif",
+          "bytes": 206927
+        }
+      ]
+    },
+    {
+      "name": "human-written",
+      "width": 420,
+      "height": 180,
+      "durationSeconds": 7.68,
+      "variants": [
+        {
+          "file": "human-written.webm",
+          "bytes": 35290
+        },
+        {
+          "file": "human-written.webp",
+          "bytes": 65866
+        },
+        {
+          "file": "human-written.gif",
+          "bytes": 145368
+        }
+      ]
+    },
+    {
+      "name": "bidirectional-links",
+      "width": 880,
+      "height": 440,
+      "durationSeconds": 6.84,
+      "variants": [
+        {
+          "file": "bidirectional-links.webm",
+          "bytes": 65897
+        },
+        {
+          "file": "bidirectional-links.webp",
+          "bytes": 81352
+        },
+        {
+          "file": "bidirectional-links.gif",
+          "bytes": 269421
+        }
+      ]
+    },
+    {
+      "name": "margin-notes",
+      "width": 480,
+      "height": 300,
+      "durationSeconds": 7.4,
+      "variants": [
+        {
+          "file": "margin-notes.webm",
+          "bytes": 48318
+        },
+        {
+          "file": "margin-notes.webp",
+          "bytes": 165512
+        },
+        {
+          "file": "margin-notes.gif",
+          "bytes": 395375
+        }
+      ]
+    },
+    {
+      "name": "local-search",
+      "width": 1020,
+      "height": 460,
+      "durationSeconds": 5.6,
+      "variants": [
+        {
+          "file": "local-search.webm",
+          "bytes": 79319
+        },
+        {
+          "file": "local-search.webp",
+          "bytes": 111554
+        },
+        {
+          "file": "local-search.gif",
+          "bytes": 416667
+        }
+      ]
+    },
+    {
+      "name": "knowledge-catalog",
+      "width": 1440,
+      "height": 900,
+      "durationSeconds": 12.4,
+      "variants": [
+        {
+          "file": "knowledge-catalog.webm",
+          "width": 1440,
+          "height": 900,
+          "fps": 60,
+          "bytes": 2404808
+        },
+        {
+          "file": "knowledge-catalog.webp",
+          "width": 960,
+          "height": 600,
+          "fps": 20,
+          "bytes": 4027106
+        },
+        {
+          "file": "knowledge-catalog.gif",
+          "width": 760,
+          "height": 476,
+          "fps": 15,
+          "bytes": 6089926
+        }
+      ],
+      "sourceCommit": "5ebf45c",
+      "poster": "knowledge-catalog-poster.webp"
+    },
+    {
+      "name": "knowledge-atlas",
+      "width": 1200,
+      "height": 900,
+      "durationSeconds": 12,
+      "variants": [
+        {
+          "file": "knowledge-atlas.webm",
+          "width": 1200,
+          "height": 900,
+          "fps": 60,
+          "bytes": 5681749
+        },
+        {
+          "file": "knowledge-atlas.webp",
+          "width": 960,
+          "height": 720,
+          "fps": 20,
+          "bytes": 6157976
+        },
+        {
+          "file": "knowledge-atlas.gif",
+          "width": 760,
+          "height": 570,
+          "fps": 15,
+          "bytes": 8414419
+        }
+      ],
+      "sourceCommit": "5ebf45c",
+      "poster": "knowledge-atlas-poster.webp"
+    },
+    {
+      "name": "knowledge-browse",
+      "width": 1200,
+      "height": 900,
+      "durationSeconds": 13.8,
+      "variants": [
+        {
+          "file": "knowledge-browse.webm",
+          "width": 1200,
+          "height": 900,
+          "fps": 60,
+          "bytes": 3199835
+        },
+        {
+          "file": "knowledge-browse.webp",
+          "width": 960,
+          "height": 720,
+          "fps": 20,
+          "bytes": 4542284
+        },
+        {
+          "file": "knowledge-browse.gif",
+          "width": 760,
+          "height": 570,
+          "fps": 15,
+          "bytes": 4977288
+        }
+      ],
+      "sourceCommit": "5ebf45c",
+      "poster": "knowledge-browse-poster.webp"
+    }
+  ],
+  "content": "Component-only recordings. Reading-demo text and declaration metadata are synthetic. Knowledge clips use live framework components and the external Codeboy knowledge corpus, with choreographed cameras and real graph interactions; source documents and graph data are not distributed."
+}

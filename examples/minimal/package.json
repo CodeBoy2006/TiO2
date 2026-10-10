@@ -1,0 +1,11 @@
+{
+    "name": "tio2-notebook",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "tio2 dev",
+        "build": "tio2 build",
+        "preview": "tio2 preview",
+        "cms": "tio2 cms"
+    }
+}

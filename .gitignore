@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+.DS_Store
+.tio2-tmp/
+apps/cms-web/dist/
+tmp/
+*.local
+.env
+.env.*
+**/encryption-secrets.local.json
+/statusquo.md

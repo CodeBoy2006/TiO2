@@ -1,0 +1,3 @@
+node_modules/
+.tio2-tmp/
+.vitepress/encryption-secrets.local.json
